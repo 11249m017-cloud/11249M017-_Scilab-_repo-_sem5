@@ -1,0 +1,19 @@
+// Experiment 1.9: Solving Linear Equations
+// 2x + 3y = 8
+// 4x + y = 6
+clc;
+clear;
+
+A = [2 3; 4 1];
+B = [8; 6];
+
+X = A \ B;
+
+disp("Coefficient Matrix A:");
+disp(A);
+disp("Constant Matrix B:");
+disp(B);
+disp("Solution [x y]:");
+disp(X);
+disp("Value of x = " + string(X(1)));
+disp("Value of y = " + string(X(2)));
